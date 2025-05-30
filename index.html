@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Chef Box</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            font-size: 25px;
+            background-color: #d72718;
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1605478368403-650b3bfb3cf5');
+            background-size: cover;
+            background-position: center;
+            color: rgb(5, 5, 5);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .section {
+            padding: 3rem 2rem;
+        }
+        .meals, .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 2rem;
+        }
+        .card-content h3 {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .btn {
+            background-color: #ff3d00;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #e53900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.jpg" alt="Logo" width="250">
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#marmitas">Marmitas</a>
+            <a href="#planos">Assinaturas</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Suas refeições saudáveis em casa</h1>
+        <p>Escolha seu plano e receba suas marmitas toda semana.</p>
+        <a href="#planos" class="btn">Ver Planos</a>
+    </section>
+
+    <section class="section" id="marmitas">
+        <h2>Marmitas em Destaque</h2>
+        <div class="meals">
+            <div class="card">
+                <img src="./assets/prato1.jpg" alt="Marmita 1">
+                <div class="card-content">
+                    <h3>Frango Grelhado com Quinoa</h3>
+                    <p>Alto em proteína e sabor.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/prato2.jpg" alt="Marmita 2">
+                <div class="card-content">
+                    <h3>Vegetariano Fit</h3>
+                    <p>Uma opção leve e deliciosa.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/prato3.jpg" alt="Marmita 3">
+                <div class="card-content">
+                    <h3>Carne ao Molho com Arroz Integral</h3>
+                    <p>Tradicional e nutritivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="planos">
+        <h2>Planos de Assinatura</h2>
+        <div class="plans">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Plano Semanal</h3>
+                    <p>5 marmitas por semana</p>
+                    <p><strong>R$ 69,90/semana</strong></p>
+                    <a href="#" class="btn">Assinar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Plano Mensal</h3>
+                    <p>25 marmitas por mês</p>
+                    <p><strong>R$ 259,90/mês</strong></p>
+                    <a href="#" class="btn">Assinar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="sobre">
+        <h2>Sobre a Chef Box</h2>
+        <p>A Chef Box nasceu com o propósito de levar refeições saudáveis, práticas e saborosas diretamente para a sua casa. Trabalhamos com ingredientes frescos e receitas balanceadas preparadas pelos nossos chef's e nutricionistas especializados, para atender todas as suas necessidades nutricionais.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chef Box. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
